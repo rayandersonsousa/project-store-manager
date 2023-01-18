@@ -3,7 +3,7 @@ const { expect } = require('chai');
 
 const connection = require('../../../src/models/connection');
 const { products } = require('./mocks/productsModel.mock');
-const { productsModel } = require('../../../src/models/productsModel');
+const productsModel = require('../../../src/models/productsModel');
 
 describe('Testes unitários de productsModel', function () {
   it('Será validado se retorna a lista de produtos', async function () {

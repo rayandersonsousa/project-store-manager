@@ -2,8 +2,8 @@ const sinon = require('sinon');
 const { expect } = require('chai');
 
 const { products } = require('./mocks/productService.mock');
-const { productsModel } = require('../../../src/models/productsModel');
-const { productService } = require('../../../src/services/productService');
+const productsModel = require('../../../src/models/productsModel');
+const productService = require('../../../src/services/productService');
 
 describe('Testes unitátios para productsModel', function () {
   it('Será validado se retorna a lista de produtos', async function () {
