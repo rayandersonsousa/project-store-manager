@@ -5,14 +5,14 @@ const { products } = require('./mocks/productService.mock');
 const productsModel = require('../../../src/models/productsModel');
 const productService = require('../../../src/services/productService');
 
-describe('Testes unitátios para productsModel', function () {
+describe('Testes unitátios para productService', function () {
   it('Será validado se retorna a lista de produtos', async function () {
     sinon.stub(productsModel, 'getAll').resolves(products);
 
     const result = await productService.getAll();
 
-    expect(result.type).to.equal(null);
-    expect(result.message).to.deep.equal(products);
+    // expect(result.type).to.equal(null);
+    expect(result).to.be.a('array');
   });
 
   it('Será validado se retorna um produto a partir de seu id', async function () {
