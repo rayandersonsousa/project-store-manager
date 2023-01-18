@@ -2,7 +2,7 @@ const sinon = require('sinon');
 const { expect } = require('chai');
 
 const connection = require('../../../src/models/connection');
-const { products } = require('./productsModel.mock');
+const { products } = require('./mocks/productsModel.mock');
 const { productsModel } = require('../../../src/models/productsModel');
 
 describe('Testes unitários de productsModel', function () {

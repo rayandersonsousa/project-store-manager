@@ -6,7 +6,7 @@ const { expect } = chai;
 
 chai.use(sinonChai);
 
-const { products } = require('./productsCrontroller.mock');
+const { products } = require('./mocks/productsController.mock');
 const { productsController } = require('../../../src/controllers/productsController');
 const { productService } = require('../../../src/services/productService');
 
